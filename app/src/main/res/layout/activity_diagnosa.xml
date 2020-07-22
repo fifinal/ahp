@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.DiagnosaActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="5dp"
+        android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorAccent">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Gejala yang Anda Alami"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorAccent"></View>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Tunggu Load Data..."/>
+        <ListView
+            android:id="@+id/lv_gejala"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+        </ListView>
+        <Button
+            android:id="@+id/btn_diagnosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIAGNOSA"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+<ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"/>
+</RelativeLayout>

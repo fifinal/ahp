@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.admin.fragment.SettingFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Tentang Aplikasi"
+            android:textColorHint="@color/colorPrimary"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <AutoCompleteTextView
+                android:id="@+id/edt_tentng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Info Penyakit"
+            android:layout_below="@+id/text_input_layout"
+            android:textColorHint="@color/colorPrimary"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <AutoCompleteTextView
+                android:id="@+id/edt_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_edit_layout"
+            android:text="SIMPAN"/>
+    </RelativeLayout>
+
+</FrameLayout>

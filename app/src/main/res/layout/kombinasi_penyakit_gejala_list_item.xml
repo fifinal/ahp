@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/abuabu"
+    android:layout_height="wrap_content"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="5dp"
+    app:contentPadding="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+        <TextView
+            android:id="@+id/tv_id_gejala"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="g2"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/tv_nama_gejala"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text=""
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+        <Spinner
+            android:id="@+id/edt_bobot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "282941475695",
+    "firebase_url": "https://sistempakar-ahp.firebaseio.com",
+    "project_id": "sistempakar-ahp",
+    "storage_bucket": "sistempakar-ahp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282941475695:android:0a7ea99cff157f1324b69a",
+        "android_client_info": {
+          "package_name": "com.example.ahp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282941475695-q7hcj153mvlcelooadlhremg85v3lusv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFj-OJuJkOaVdlo4FpqzTEear8AlCRWh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282941475695-q7hcj153mvlcelooadlhremg85v3lusv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
